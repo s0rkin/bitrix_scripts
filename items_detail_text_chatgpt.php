@@ -32,7 +32,8 @@ while($ob = $res->GetNextElement()){
         print_r("\n" . "Битрикс отправил текст : ");
         //формируем запрос для gpt
         $test .= "Перепиши описание на русском языке для товара более развернуто, без выделения характеристик и добавь что знаешь - " . $arFields['NAME'] . " .\n";
-        $arProps = $ob->GetProperties(array(), array("EMPTY" => "N"));
+        //только запоненные хар-ки
+	$arProps = $ob->GetProperties(array(), array("EMPTY" => "N"));
   
         foreach ($arProps as $arProp){
             $arPropName = $arProp['NAME'];
