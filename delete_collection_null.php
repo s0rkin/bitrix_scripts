@@ -19,8 +19,6 @@ $arSelect = array("ID", "IBLOCK_ID", "NAME");
 //ntopcount количество коллекций для проверки, аккуратнее, если у вас много ID.
 $res = CIBlockElement::GetList(array("RAND" => "ASC"), $arFilter, false, array("nTopCount" => 1000), $arSelect);
 
-$test = "";
-
 while($ob = $res->GetNextElement()){
 	$arFields = $ob->GetFields();
     //print_r("<br>" . $arFields["ID"] . " " . $arFields["NAME"]);
