@@ -28,6 +28,7 @@ while($ob = $res->GetNextElement()){
 
         $colSelect = array("ID");
         $colFilter = array(
+	    //инфоблок товаров, замените на свой
             "IBLOCK_ID" => 15,
             //свойство коллекции
             "PROPERTY_COLLECTION" => $arFields["ID"],
