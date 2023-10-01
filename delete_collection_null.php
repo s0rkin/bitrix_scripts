@@ -1,5 +1,5 @@
 <?php
-$_SERVER['DOCUMENT_ROOT'] = '/var/www/benedom.ru';
+$_SERVER['DOCUMENT_ROOT'] = '/var/www/site';
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
 // Подключение модуля Информационных блоков
