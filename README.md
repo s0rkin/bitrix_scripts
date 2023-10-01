@@ -1,4 +1,4 @@
-# bitrix_scripts
+# bitrix scripts
 Личные "полезные" скрипты для bitrix, которые могут быть полезны всем.
 
 
