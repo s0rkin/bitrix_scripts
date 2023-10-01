@@ -22,8 +22,8 @@ $arFilter = array(
 
 $arSelect = array("ID", "IBLOCK_ID", "NAME", "DETAIL_TEXT");
 
-//ntopcount количество брендов для проверки
-$res = CIBlockElement::GetList(array(), $arFilter, false, array(), $arSelect);
+//ntopcount количество товаров для проверки
+$res = CIBlockElement::GetList(array(), $arFilter, false, array("nTopCount" => 1000), $arSelect);
 
 //перебираем товары по фильтру и если есть DETAIL_TEXT удаляем этот текст.
 while($ob = $res->GetNextElement()){
