@@ -5,8 +5,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 CModule::IncludeModule('iblock');
 
 $quantity = 0;
-$iblock_id = 15;
-$site = "https://site.ru";
+$iblock_id = 15; #ID инфоблока товаров
+$site = "https://site.ru"; #URL сайта
 
 $arSelect = Array("IBLOCK_ID","SECTION_ACTIVE", "ID");
 $arFilter = Array("IBLOCK_ID"=>$iblock_id,"SECTION_ACTIVE" => "Y", "PREVIEW_PICTURE" => false, "DETAIL_PICTURE" => false);
