@@ -8,7 +8,7 @@ $quantity = 0;
 $iblock_id = 15; #ID инфоблока товаров
 $site = "https://site.ru"; #URL сайта
 
-$arSelect = Array("IBLOCK_ID","SECTION_ACTIVE", "ID");
+$arSelect = Array("IBLOCK_ID", "ID");
 $arFilter = Array("IBLOCK_ID"=>$iblock_id,"SECTION_ACTIVE" => "Y", "PREVIEW_PICTURE" => false, "DETAIL_PICTURE" => false);
 $res = CIBlockElement::GetList(Array("ID"=>"ASC"), $arFilter, false, false, $arSelect);
 while($ob = $res->Fetch())
